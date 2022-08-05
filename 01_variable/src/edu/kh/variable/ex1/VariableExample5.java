@@ -55,6 +55,8 @@ public class VariableExample5 {
 		System.out.println("새로운 코드");
 		int aaa = 10;
 		
+		System.out.println("이건 자습시간에 추가한 것");
+		
 		
 	}
 }
