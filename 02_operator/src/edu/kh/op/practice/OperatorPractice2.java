@@ -45,8 +45,8 @@ public class OperatorPractice2 {
 		System.out.print("성적(소수점 아래 둘째 자리까지) : ");
 		double grade = sc.nextDouble();
 		
-		System.out.printf("%d학년 %d반 %d번 %s %s의 성적은 %.2f점 입니다.\n,"
-				+ grade, classnum1, classnum2, number, gender, name, grade );
+		System.out.printf("%d학년 %d반 %d번 %s %s의 성적은 %.2f점 입니다.\n",
+				classnum1, classnum2, number, gender, name, grade );
 		
 	
 	}
