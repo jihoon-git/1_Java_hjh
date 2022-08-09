@@ -146,26 +146,85 @@ public class SwitchExample {
 		
 //		[실행 화면]
 		// 정수 1 입력 : 5
-		/// 연산자 입력 : +
+		// 연산자 입력 : +
 		// 정수 2 입력 : 4
 		// 5 + 4 = 9
 		
 //		[실행 화면]
 		// 정수 1 입력 : 5
-		/// 연산자 입력 : /
+		// 연산자 입력 : /
 		// 정수 2 입력 : 0
 		// 0으로는 나눌 수 없습니다.
 
 //		[실행 화면]
 		// 정수 1 입력 : 5
-		/// 연산자 입력 : $
+		// 연산자 입력 : $
 		// 정수 2 입력 : 3
 		// 존재하지 않는 연산자 입니다.
 
 		
+		String result;
+		switch(op) {
+//		case "+" : System.out.println(num1 + "+" + num2 + "=" + (num1+num2));break;
+		case "+" : System.out.printf("%d %s %d=%d \n", num1, op, num2, num1+num2);break;
+		case "-" : System.out.printf("%d %s %d=%d \n", num1, op, num2, num1-num2);break;
+		case "*" : System.out.printf("%d %s %d=%d \n", num1, op, num2, num1*num2);break;
+		case "/" : 
+			
+			if(num2==0) {
+				System.out.println("0으로 나눌 수 없습니다.");
+			} else {			
+			System.out.printf("%d %s %d=%d \n", num1, op, num2, num1/num2);
+			}
+			break;
+		
+		// 두 번째 입력한 정수가 0인 경우
+		// 두 번쨰 입력한 정수가 0이 아닌 경우
+		
+		case "%" : System.out.printf("%d %s %d=%d \n", num1, op, num2, num1%num2);break;
+		default : System.out.println("존재하지 않는 연산자 입니다.");
+			
+			//연산자를 잘못 입력한 경우
+		}
 		
 		
 	}
 	
+	public void ex5() {
+		// switch문의 break 역할
+		// 계절 판별(switch 버젼)
+		
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.print("달 입력 : ");
+		int month = sc.nextInt();
+
+		String season;
+		switch(month) {
+		
+		//switch문에서 break는
+		//"해당 case를 수행한 후 멈춰라" 라는 뜻
+		//break가 없을 경우
+		//-> 다음 case가 연달아서 수행된다!
+		
+		case 3 : case 4 : case 5 : season = "봄"; break;
+		
+		case 6 : case 7 : case 8 : season = "여름"; break;
+		
+		case 9 :case 10 : case 11 : season = "가을"; break;
+
+		case 12 : case 1 : case 2 : season = "겨울"; break;
+		
+		default : season = "잘못 입력 하셨습니다.";
+		}
+		
+		System.out.println(season);
+		
+		
+		//선생님 깃허브에서 result로 푸는 법 체크
+	}
+	
+	Scanner sc = new Scanner(System.in);
+
 	
 }
