@@ -82,4 +82,61 @@ public class ConditionExample {
 		
 	}
 	
+	
+	public void ex3() {
+		
+		// if- else if - else
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("1~12 사이의 정수를 입력해 주세요 : ");
+		int input = sc.nextInt();
+		
+		String season; //변수 선언
+		
+		// 봄 (3~5)
+		if(input >=3 && input <=5) {
+			season = "봄";
+		} else if(input >=6 && input <=8) {
+			season = "여름";
+		} else if(input >=9&&input<=11) {
+			season = "가을";
+		} else if(input == 12 || input ==1 || input ==2) {
+			season = "겨울";
+		} else {
+			season = "해당하는 계절이 없습니다.";
+		}
+		
+		System.out.println(season);
+// The local variable season may not have been initialized
+	}
+	
+	public void ex4() {
+		// 나이를 입력 받아
+		// 13세 이하면 "어린이"
+		// 13세 초과, 19세 이하면 "청소년"
+		// 19세 초과 시 "성인"을 출력
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("나이를 입력하시오 : ");
+		int input = sc.nextInt();
+		
+		String age;
+		
+		if(input <=13&&input>=0) {
+			age = "어린이";
+		} else if(input>13 && input<=19) {
+			age = "청소년";
+		} else if (input>19) {
+			age = "성인";
+		} else {
+			age = "다시 입력하세요.";
+		}
+		
+		System.out.println(age);
+	}
+	
+	
+	
 }
