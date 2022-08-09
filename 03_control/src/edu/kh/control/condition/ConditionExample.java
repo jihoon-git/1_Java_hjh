@@ -124,14 +124,12 @@ public class ConditionExample {
 		
 		String age;
 		
-		if(input <=13&&input>=0) {
+		if(input <=13) {
 			age = "어린이";
-		} else if(input>13 && input<=19) {
+		} else if(input<=19) {
 			age = "청소년";
-		} else if (input>19) {
-			age = "성인";
 		} else {
-			age = "다시 입력하세요.";
+			age = "성인";
 		}
 		
 		System.out.println(age);
@@ -139,4 +137,59 @@ public class ConditionExample {
 	
 	
 	
+	public void ex5() {
+		
+	      // 놀이기구 탑승 제한 검사
+	      
+	      // 나이가 12세 이상, 키 140.0cm 이상 일 경우에만 "탑승 가능"
+	      // 나이가 12미만인 경우 : "적정 연령이 아닙니다."
+	      // 키가 140.0cm 미만 : "적정 키가 아닙니다."
+	      // 나이를 0세 미만, 100세 초과 시 : "잘못 입력 하셨습니다."
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("나이 입력 : ");
+		int age = sc.nextInt();
+		
+		System.out.print("키 입력 : ");
+		double height = sc.nextDouble();
+
+		String result;
+		
+/*		if(age<0 ||age>100) { //0세 미만 100세 초과
+			result = "잘못 입력 하셨습니다.";
+			
+		} else {
+		
+		if (age<12) { //12세 미만
+			result = "적정 연령이 아닙니다.";
+		} else { //12세 이상
+			if(height<140.0) {//140.0 미만
+				result="적정 키다 아닙니다.";
+			} else {
+					result="탑승 가능";
+					
+				}
+			}
+		}
+			
+		
+		System.out.println(result);
+		
+	}
+*/
+		
+		if(age<0 ||age>100) {
+			result = "잘못 입력 하셨습니다.";
+			
+		} else if(age<12) {
+			result = "적정 연령이 아닙니다.";
+		} else if(height <140.0) {
+			result = "적정 키가 아닙니다.";
+		} else {
+			result ="탑승 가능";
+		}
+		
+		System.out.println(result);
+	}
+		
 }
