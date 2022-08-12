@@ -227,22 +227,22 @@ public class BranchExample {
 				
 		for(int i=1;i<=input;i++) {
 			
-			System.out.println(i+"번째 게임");
-			System.out.println("가위/바위/보 중 하나를 입력 해 주세요 : ");
+			System.out.print(i+"번째 게임");
+			System.out.println("/n가위/바위/보 중 하나를 입력 해 주세요 : ");
 			String rps=sc.next();
 			
 			if(rps.equals("가위")){
 				
 				if(ran==0){
-					System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+					System.out.println("컴퓨터는 ["+"가위"+"]를 선택했습니다. ");
 					System.out.println("비겼습니다");
 					System.out.println("현재 기록 : ");
 				} else if(ran==2){
-					System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+					System.out.println("컴퓨터는 ["+"보"+"]를 선택했습니다. ");
 					System.out.println("플레이어 승!");
 					System.out.println("현재 기록 : ");
 				} else {
-					System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+					System.out.println("컴퓨터는 ["+"바위"+"]를 선택했습니다. ");
 					System.out.println("졌습니다ㅠㅠ");
 					System.out.println("현재 기록 : ");
 				}
@@ -251,15 +251,15 @@ public class BranchExample {
 			} else if(rps.equals("바위")) {
 				
 				if(ran==1){
-					System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+					System.out.println("컴퓨터는 ["+"바위"+"]를 선택했습니다. ");
 					System.out.println("비겼습니다");
 					System.out.println("현재 기록 : ");
 				} else if(ran==0){
-					System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+					System.out.println("컴퓨터는 ["+"가위"+"]를 선택했습니다. ");
 					System.out.println("플레이어 승!");
 					System.out.println("현재 기록 : ");
 				} else {
-					System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+					System.out.println("컴퓨터는 ["+"보"+"]를 선택했습니다. ");
 					System.out.println("졌습니다ㅠㅠ");
 					System.out.println("현재 기록 : ");
 				}
@@ -267,15 +267,15 @@ public class BranchExample {
 			} else if(rps.equals("보")){
 				
 				if(ran==2){
-					System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+					System.out.println("컴퓨터는 ["+"보"+"]를 선택했습니다. ");
 					System.out.println("비겼습니다");
 					System.out.println("현재 기록 : ");
 				} else if(ran==1){
-					System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+					System.out.println("컴퓨터는 ["+"바위"+"]를 선택했습니다. ");
 					System.out.println("플레이어 승!");
 					System.out.println("현재 기록 : ");
 				} else {
-					System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+					System.out.println("컴퓨터는 ["+"가위"+"]를 선택했습니다. ");
 					System.out.println("졌습니다ㅠㅠ");
 					System.out.println("현재 기록 : ");
 				}
@@ -285,26 +285,28 @@ public class BranchExample {
 				break;
 			}
 			
-//			0 == 가위 // 1
-//			1 == 바위 // 2
-//			2 == 보 // 0
-//			if(rps) {
-//				//플레이어 승
-//
-//				System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
-//				System.out.println("플레이어 승!");
-//				System.out.println("현재 기록 : ");
-//				
-//			} else if(rps.equals("가위")||rps.equals("바위")||rps.equals("보")) {
-//				//비겼다
-//				System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
-//				System.out.println("비겼습니다");
-//				System.out.println("현재 기록 : ");
-//			} else {//졌다
-//				System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
-//				System.out.println("졌습니다ㅠㅠ");
-//				System.out.println("현재 기록 : ");
-//			}
+			System.out.println();
+			
+
+
+			
+/*				if(rps) {
+				//플레이어 승
+
+				System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+				System.out.println("플레이어 승!");
+				System.out.println("현재 기록 : ");
+				
+			} else if(rps.equals("가위")||rps.equals("바위")||rps.equals("보")) {
+				//비겼다
+				System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+				System.out.println("비겼습니다");
+				System.out.println("현재 기록 : ");
+			} else {//졌다
+				System.out.println("컴퓨터는 ["+ran+"]를 선택했습니다. ");
+				System.out.println("졌습니다ㅠㅠ");
+				System.out.println("현재 기록 : ");
+			} */
 
 		}
 	}
