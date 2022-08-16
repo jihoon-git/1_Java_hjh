@@ -17,7 +17,7 @@ public class VariableExample6 {
 		
 		// 3) Scanner로 입력 받기
 		
-		// 정수 : sc.netInt();
+		// 정수 : sc.nextInt();
 		
 		System.out.println("입력받은 두 정수의 합 구하기");
 		
