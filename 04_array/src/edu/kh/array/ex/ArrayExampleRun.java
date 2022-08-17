@@ -5,7 +5,7 @@ public class ArrayExampleRun {
 	
 		ArrayExample arrayEx = new ArrayExample();
 		
-//		arrayEx.ex1();
+		arrayEx.ex1();
 //		arrayEx.ex2();
 //		arrayEx.ex3();
 //		arrayEx.ex4();
@@ -23,7 +23,7 @@ public class ArrayExampleRun {
 //		arrayEx2.ex1();
 //		arrayEx2.ex2();
 //		arrayEx2.ex3();
-		arrayEx2.ex4();
+//		arrayEx2.ex4();
 		
 }
 }
