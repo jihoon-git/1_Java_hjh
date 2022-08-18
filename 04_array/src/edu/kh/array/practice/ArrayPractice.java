@@ -135,6 +135,15 @@ public class ArrayPractice {
 //		주민등록번호를 입력 받아 char 배열에 저장한 후 출력하세요.
 //		단, char 배열 저장 시 성별을 나타내는 숫자 이후부터 *로 저장하세요.
 		
+		char arr[]= new char[14];
+		
+		
+		System.out.print("주민등록번호(-포함) : ");
+		for(int i=0; i<arr.length; i++) {
+		
+		Scanner sc = new Scanner(System.in);
+		char input = sc.next().charAt(0) ;
+		}
 	}
 	
 	public void practice8() {
@@ -187,11 +196,30 @@ public class ArrayPractice {
 	}
 	
 	public void practice11() {
+//		10개의 값을 저장할 수 있는 정수형 배열을 선언 및 할당하고
+//		1~10 사이의 난수를 발생시켜 중복된 값이 없게 배열에 초기화한 후 출력하세요.
+
+		int arr[] = new int[10];
+	
+		for(int i=0;i<arr.length;i++) {
+			int ran = (int)(Math.random()*10+1);
+			arr[i]=ran;
+			System.out.print(arr[i]+" ");
+		} 
 		
 	}
 	
 	public void practice12() {
+//		로또 번호 자동 생성기 프로그램을 만들기.
+//		(중복 값 없이 오름차순으로 정렬하여 출력하세요.)
 		
+		int arr[] = new int[6];
+		
+		for(int i=0;i<arr.length;i++) {
+			int ran = (int)(Math.random()*45+1);
+			arr[i]=ran;
+			System.out.print(arr[i]+" ");
+		} 
 	}
 	
 	public void practice13() {
