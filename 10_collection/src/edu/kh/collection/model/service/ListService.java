@@ -1,6 +1,8 @@
 package edu.kh.collection.model.service;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 import edu.kh.collection.model.vo.Student;
 
@@ -63,4 +65,30 @@ public class ListService {
 		
 	}
 	
+	
+	public void ex2() { // 클래스팅 문제해결 공부용 과제 풀어본 것 나중에 답안 체크
+		
+		Scanner sc = new Scanner(System.in);
+		List<String> list = new ArrayList<>();
+		list.add("홍길동");
+		list.add("김미영");
+		list.add("김길동");
+		list.add("남상미");
+		list.add("강두기");
+		System.out.print("이름 입력 : ");
+		String input = sc.next();
+		
+		
+		boolean flag = true;
+		for(int i=0 ; i<list.size() ; i++) {
+		
+		String name = list.get(i);
+		if(name.equals(input)){
+		System.out.println(i + "번째 인덱스에 존재합니다.");
+			}
+		}
+		if(flag) {
+			System.out.println("입력한 회원이 존재하지 않습니다.");
+			}	
+	}
 }
